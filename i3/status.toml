@@ -1,0 +1,50 @@
+# vi:syntax=toml
+icons = "awesome" 
+
+# base16-i3status-rust (https://github.com/mystfox/base16-i3status-rust)
+# arc-dark-custom by arc-dark-custom
+
+[theme]
+name = "plain"
+
+[theme.overrides]
+idle_bg = "#404552"
+idle_fg = "#d3dae3"
+separator_bg = "#404552"
+separator_fg = "#d3dae3"
+info_bg = "#39b0ca"
+info_fg = "#404552"
+good_bg = "#46b49b"
+good_fg = "#404552"
+warning_bg = "#bca065"
+warning_fg = "#404552"
+critical_bg = "#de9232"
+critical_fg = "#404552"
+# The rest of the theme settings are left at default.
+
+[[block]]
+block = "net"
+device = "wlp3s0"
+ssid = true
+ip = true
+speed_up = false
+# graph_up = true
+interval = 1
+
+[[block]]
+block = "backlight"
+
+[[block]]
+block = "time"
+format = "%d/%m %R"
+timezone = "Asia/Jakarta"
+interval = 60
+
+[[block]]
+block = "sound"
+step_width = 5
+
+[[block]]
+block = "battery"
+upower = true
+format = "{percentage}% {time}"

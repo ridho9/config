@@ -1,0 +1,61 @@
+*background:  #404552
+*foreground:  #d3dae3
+*color0:  #3a3e41
+*color1:  #e48b7c
+*color2:  #72af9e
+*color3:  #b2a53b
+*color4:  #45ace2
+*color5:  #cf8cd0
+*color6:  #69abcf
+*color7:  #a2a4a4
+*color8:  #353e4b
+*color9:  #de9232
+*color10:  #46b49b
+*color11:  #bca065
+*color12:  #83a1f1
+*color13:  #b297dc
+*color14:  #39b0ca
+*color15:  #93a5bf
+
+!-- Xft settings -- !
+Xft.dpi:        118
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+
+URxvt.termName: rxvt-unicode
+
+! disable scrollbar
+URxvt*scrollBar: false
+! scrollback buffer
+URxvt*saveLines: 10000
+
+! URxvt.background:       #000000
+! URxvt.foreground:       gray90
+! URxvt.color7:           gray90
+! URxvt.colorBD:          #ffffff
+! URxvt.cursorColor:      #e0e080
+! URxvt.throughColor:     #8080f0
+! URxvt.highlightColor:   #f0f0f0
+
+URxvt*font:		xft:DejaVu Sans Mono:size=8
+URxvt*letterSpace:	-1
+
+URxvt.perl-ext-common:	default,selection-to-clipboard,resize-font
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+

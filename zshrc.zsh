@@ -2,6 +2,12 @@
 export CONFIG_DIR=~/Project/config
 [[ -r $CONFIG_DIR/alias.zsh ]] && source $CONFIG_DIR/alias.zsh || print "missing alias.zsh"
 
+### Added by Zplugin's installer
+source '/home/rid9/.zplugin/bin/zplugin.zsh'
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
+### End of Zplugin's installer chunk
+
 # Set options
 setopt autocd
 setopt cdablevars
@@ -33,12 +39,6 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-### Added by Zplugin's installer
-source '/home/rid9/.zplugin/bin/zplugin.zsh'
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
-### End of Zplugin's installer chunk
-	
 export EDITOR=nvim
 export BROWSER=firefox
 export N_PREFIX=~/n

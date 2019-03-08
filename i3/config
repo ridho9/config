@@ -174,32 +174,32 @@ bindsym $mod+r mode "resize"
 
 for_window [class="^.*"] border pixel 1
 
-## Base16 arc-dark-custom
-# Author: arc-dark-custom
+## Base16 materia-dark-custom
+# Author: materia-dark-custom
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #404552
-set $base01 #3a3e41
-set $base02 #353e4b
-set $base03 #898f9a
-set $base04 #545966
-set $base05 #d3dae3
-set $base06 #a2a4a4
-set $base07 #93a5bf
-set $base08 #de9232
-set $base09 #b2a53b
-set $base0A #bca065
-set $base0B #46b49b
-set $base0C #39b0ca
-set $base0D #83a1f1
-set $base0E #b297dc
-set $base0F #b48722
+set $base00 #303030
+set $base01 #303030
+set $base02 #18352d
+set $base03 #8f8f8f
+set $base04 #444444
+set $base05 #eeeeee
+set $base06 #ffe9c9
+set $base07 #eeeeee
+set $base08 #d8645a
+set $base09 #a67d31
+set $base0A #bc742d
+set $base0B #0095a2
+set $base0C #338dd6
+set $base0D #8b71ff
+set $base0E #d557e7
+set $base0F #ab5c31
 
 # Basic bar configuration using the Base16 variables.
 bar {
     position top
-    status_command i3status-rs $config/i3/status.toml
+    status_command i3status-rs ~/.config/i3/status.toml
 
     colors {
         background $base00
@@ -224,10 +224,11 @@ client.urgent           $base08 $base08 $base00 $base08 $base08
 client.placeholder      $base00 $base00 $base05 $base00 $base00
 client.background       $base07
 
+
 exec --no-startup-id nm-applet
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id compton
-exec --no-startup-id nitrogen --restore
+# exec --no-startup-id nitrogen --restore
 
 # volume key
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume

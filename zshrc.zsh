@@ -24,20 +24,7 @@ bindkey -v
 zstyle :compinstall filename '/home/rid9/.zshrc'
 
 autoload -Uz compinit promptinit
-compinit
 promptinit
-
-# Completion
-zstyle ':completion:*' menu select
-
-# Better history
-# Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
 
 export EDITOR=nvim
 export BROWSER=firefox
@@ -51,3 +38,22 @@ bindkey  "^[[8~"   end-of-line
 typeset -U path
 path+=~/.yarn/bin
 path+=~/n/bin
+path+=~/.local/bin
+
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=("fg=default")
+
+# zplugin snippet https://raw.githubusercontent.com/jackharrisonsherlock/common/master/common.zsh-theme
+zplugin ice pick"async.zsh" src"pure.zsh"
+zplugin light sindresorhus/pure
+
+zplugin ice blockf
+zplugin light zsh-users/zsh-completions
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light supercrabtree/k
+
+zplugin light zdharma/fast-syntax-highlighting
+zplugin light zsh-users/zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+compinit

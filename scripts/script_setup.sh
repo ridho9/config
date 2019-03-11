@@ -13,5 +13,5 @@ ln -s $CONFIG_DIR/zshrc ~/.zshrc && echo "symlink zshrc"
 
 # Create config folder
 [[ ! -r ~/.config ]] && mkdir ~/.config
-ln -s $CONFIG_DIR/i3 ~/.config/i3
-ln -s $CONFIG_DIR/nvim ~/.config/nvim
+ln -s $CONFIG_DIR/i3 ~/.config/i3 && echo "symlink i3"
+ln -s $CONFIG_DIR/nvim ~/.config/nvim && echo "symlink nvim"

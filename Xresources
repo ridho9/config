@@ -18,7 +18,7 @@
 *color15:  #eeeeee
 
 !-- Xft settings -- !
-Xft.dpi:        118
+Xft.dpi:        96
 Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.hinting:    true
@@ -39,7 +39,7 @@ URxvt*saveLines: 10000
 ! URxvt.throughColor:     #8080f0
 ! URxvt.highlightColor:   #f0f0f0
 
-URxvt*font:		xft:DejaVu Sans Mono:size=8
+URxvt*font:		xft:DejaVu Sans Mono:size=10
 URxvt*letterSpace:	-1
 
 URxvt.perl-ext-common:	default,selection-to-clipboard,resize-font

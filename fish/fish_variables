@@ -12,6 +12,7 @@ SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gst:git\x20status
+SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fish_abbr_spm:sudo\x20pacman
 SETUVAR fish_color_autosuggestion:555\x1ebrblue
 SETUVAR fish_color_cancel:\x2dr

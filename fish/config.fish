@@ -12,6 +12,7 @@ abbr -a -U gc git commit
 abbr -a -U ga git add
 abbr -a -U gst git status
 abbr -a -U gco git checkout
+abbr -a -U nv nvim
 
 set -g pure_color_git_branch (set_color brblue)
 

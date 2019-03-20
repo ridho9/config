@@ -1,61 +1,69 @@
-*background:  #303030
-*foreground:  #eeeeee
-*color0:  #303030
-*color1:  #e8549d
-*color2:  #518ea0
-*color3:  #a67d31
-*color4:  #3d82ff
-*color5:  #c366cf
-*color6:  #6285e0
-*color7:  #ffe9c9
-*color8:  #18352d
-*color9:  #d8645a
-*color10:  #0095a2
-*color11:  #bc742d
-*color12:  #8b71ff
-*color13:  #d557e7
-*color14:  #338dd6
-*color15:  #eeeeee
-
+!*background:  #303030
+!*foreground:  #eeeeee
+!*color0:  #303030
+!*color1:  #e8549d
+!
+!*color2:  #518ea0
+!*color3:  #a67d31
+!
+!*color4:  #3d82ff
+!*color5:  #c366cf
+!
+!*color6:  #6285e0
+!*color7:  #ffe9c9
+!
+!*color8:  #18352d
+!*color9:  #d8645a
+!
+!*color10:  #0095a2
+!*color11:  #bc742d
+!
+!*color12:  #8b71ff
+!*color13:  #d557e7
+!
+!*color14:  #338dd6
+!*color15:  #eeeeee
+!
 !-- Xft settings -- !
 Xft.dpi:        96
 Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintfull
-
-URxvt.termName: rxvt-unicode
-
-! disable scrollbar
-URxvt*scrollBar: false
-! scrollback buffer
-URxvt*saveLines: 10000
-
-! URxvt.background:       #000000
-! URxvt.foreground:       gray90
-! URxvt.color7:           gray90
-! URxvt.colorBD:          #ffffff
-! URxvt.cursorColor:      #e0e080
-! URxvt.throughColor:     #8080f0
-! URxvt.highlightColor:   #f0f0f0
-
-URxvt*font:		xft:DejaVu Sans Mono:size=10
-URxvt*letterSpace:	-1
-
-URxvt.perl-ext-common:	default,selection-to-clipboard,resize-font
-
-URxvt.keysym.Shift-Control-V: eval:paste_clipboard
-URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-
-URxvt.iso14755: false
-URxvt.iso14755_52: false
-
-! do not scroll with output
-URxvt*scrollTtyOutput: false
-
-! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer: true
-
-! scroll back to the bottom on keypress
-URxvt*scrollTtyKeypress: true
-
+!
+!URxvt.termName: rxvt-unicode
+!
+!! disable scrollbar
+!URxvt*scrollBar: false
+!! scrollback buffer
+!URxvt*saveLines: 10000
+!
+!! URxvt.background:       #000000
+!! URxvt.foreground:       gray90
+!! URxvt.color7:           gray90
+!! URxvt.colorBD:          #ffffff
+!! URxvt.cursorColor:      #e0e080
+!! URxvt.throughColor:     #8080f0
+!! URxvt.highlightColor:   #f0f0f0
+!
+!URxvt*font:		xft:DejaVu Sans Mono:size=10, xft: Noto Emoji
+!URxvt*letterSpace:	-1
+!
+!URxvt.perl-ext-common:	default,selection-to-clipboard,resize-font
+!
+!URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+!URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+!
+!URxvt.iso14755: false
+!URxvt.iso14755_52: false
+!
+!! do not scroll with output
+!URxvt*scrollTtyOutput: false
+!
+!! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+!URxvt*scrollWithBuffer: true
+!
+!! scroll back to the bottom on keypress
+!URxvt*scrollTtyKeypress: true
+!
+!

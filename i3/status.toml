@@ -54,7 +54,7 @@ block = "toggle"
 text = "Caps"
 command_on = "xdotool key Caps_Lock"
 command_off = "xdotool key Caps_Lock"
-command_state = ''' [[ $(xset q | grep "Caps Lock" | sed -r 's/.*(on|off).*Num.*/\1/') == "on" ]] && echo "on" '''
+command_state = ''' $CONFIG/scripts/get_caps.sh '''
 interval = 0.5
 
 [[block]]

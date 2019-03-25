@@ -13,11 +13,18 @@ abbr -a -U ga git add
 abbr -a -U gst git status
 abbr -a -U gco git checkout
 abbr -a -U nv nvim
+abbr -a -U ! fuck
+abbr -a -U pev pipenv
 
 set -g pure_color_git_branch (set_color brblue)
 
-set -x EDITOR nvim
+set -x EDITOR code
 set -x BROWSER firefox
 set -x N_PREFIX ~/n
 
+set -x CONFIG ~/Project/config
+set -x PIPENV_VENV_IN_PROJECT 1
+
 set -x PATH ~/.yarn/bin ~/n/bin ~/.local/bin $PATH
+
+direnv hook fish | source

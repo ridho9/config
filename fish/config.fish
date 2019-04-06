@@ -28,3 +28,6 @@ set -x PIPENV_VENV_IN_PROJECT 1
 set -x PATH ~/.yarn/bin ~/n/bin ~/.local/bin $PATH
 
 direnv hook fish | source
+
+# opam configuration
+source /home/rid9/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true

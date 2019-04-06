@@ -1,25 +1,22 @@
 # vi:syntax=toml
-icons = "awesome" 
+icons = "awesome"
 
 # base16-i3status-rust (https://github.com/mystfox/base16-i3status-rust)
-# arc-dark-custom by arc-dark-custom
+# Dracula by
 
 [theme]
-name = "plain"
-
+name = "solarized-dark"
 [theme.overrides]
-idle_bg = "#303030"
-idle_fg = "#eeeeee"
-separator_bg = "#303030"
-separator_fg = "#eeeeee"
-info_bg = "#338dd6"
-info_fg = "#303030"
-good_bg = "#0095a2"
-good_fg = "#303030"
-warning_bg = "#bc742d"
-warning_fg = "#303030"
-critical_bg = "#d8645a"
-critical_fg = "#303030"
+idle_bg = "#282936"
+idle_fg = "#e9e9f4"
+info_bg = "#a1efe4"
+info_fg = "#282936"
+good_bg = "#ebff87"
+good_fg = "#282936"
+warning_bg = "#00f769"
+warning_fg = "#282936"
+critical_bg = "#ea61b2"
+critical_fg = "#282936"
 # The rest of the theme settings are left at default.
 
 [[block]]

@@ -243,3 +243,7 @@ bindsym --release Caps_Lock exec $config/scripts/show_caps_status.sh
 # brightness key
 bindsym XF86MonBrightnessUp exec light -A 3 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 3 # decrease screen brightness
+
+# print screen
+bindsym --release Print exec \
+        "scrot ~/Pictures/ss/$(date --iso-8601='seconds').png -m -e 'xclip -selection c -t image/png < $f'"

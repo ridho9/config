@@ -27,6 +27,14 @@ set -x PIPENV_VENV_IN_PROJECT 1
 
 set -x PATH ~/.yarn/bin ~/n/bin ~/.local/bin $PATH
 
+set -x PATH /home/rid9/perl5/bin $PATH ^/dev/null
+set -q PERL5LIB; and set -x PERL5LIB /home/rid9/perl5/lib/perl5:$PERL5LIB
+set -q PERL5LIB; or set -x PERL5LIB /home/rid9/perl5/lib/perl5
+set -q PERL_LOCAL_LIB_ROOT; and set -x PERL_LOCAL_LIB_ROOT /home/rid9/perl5:$PERL_LOCAL_LIB_ROOT
+set -q PERL_LOCAL_LIB_ROOT; or set -x PERL_LOCAL_LIB_ROOT /home/rid9/perl5
+set -x PERL_MB_OPT '--install_base "/home/rid9/perl5"'
+set -x PERL_MM_OPT INSTALL_BASE=/home/rid9/perl5
+
 direnv hook fish | source
 
 # opam configuration

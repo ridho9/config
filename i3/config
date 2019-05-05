@@ -232,9 +232,12 @@ exec --no-startup-id compton
 # exec --no-startup-id nitrogen --restore
 
 # volume key
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+set $output_sink 1
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $output_sink +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $output_sink -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $output_sink toggle # mute sound
 
 # toggle key
 bindsym --release XF86TouchpadToggle exec $config/scripts/toggle_touchpad.sh

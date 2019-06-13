@@ -35,6 +35,8 @@ set -q PERL_LOCAL_LIB_ROOT; or set -x PERL_LOCAL_LIB_ROOT /home/rid9/perl5
 set -x PERL_MB_OPT '--install_base "/home/rid9/perl5"'
 set -x PERL_MM_OPT INSTALL_BASE=/home/rid9/perl5
 
+set -x PATH ~/Android/Sdk/platform-tools $PATH
+
 direnv hook fish | source
 
 # opam configuration

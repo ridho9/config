@@ -8,10 +8,15 @@ end
 for i in (cat ~/.bashrc | grep "^export" | sed -r 's/export (.*)=/set -x \1 /'); eval $i; end
 
 abbr -a -U spm sudo pacman
+
 abbr -a -U gc git commit
 abbr -a -U ga git add
 abbr -a -U gst git status
 abbr -a -U gco git checkout
+abbr -a -U glo git log --oneline
+abbr -a -U glog git log --oneline --graph
+abbr -a -U gsh git stash
+
 abbr -a -U nv nvim
 abbr -a -U ! fuck
 abbr -a -U pev pipenv
@@ -19,7 +24,7 @@ abbr -a -U pev pipenv
 set -g pure_color_git_branch (set_color brblue)
 
 set -x EDITOR code
-set -x BROWSER firefox
+set -x BROWSER firefox-developer-edition
 set -x N_PREFIX ~/n
 
 set -x CONFIG ~/Project/config
@@ -38,6 +43,8 @@ set -x PERL_MM_OPT INSTALL_BASE=/home/rid9/perl5
 set -x PATH ~/Android/Sdk/platform-tools $PATH
 
 direnv hook fish | source
+hub alias -s | source
+source /opt/asdf-vm/asdf.fish
 
 # opam configuration
 source /home/rid9/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true

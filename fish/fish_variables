@@ -12,6 +12,9 @@ SETUVAR _fish_abbr__21_:fuck
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gco:git\x20checkout
+SETUVAR _fish_abbr_glo:git\x20log\x20\x2d\x2doneline
+SETUVAR _fish_abbr_glog:git\x20log\x20\x2d\x2doneline\x20\x2d\x2dgraph
+SETUVAR _fish_abbr_gsh:git\x20stash
 SETUVAR _fish_abbr_gst:git\x20status
 SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fish_abbr_pev:pipenv

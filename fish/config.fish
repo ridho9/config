@@ -42,6 +42,8 @@ set -x PERL_MM_OPT INSTALL_BASE=/home/rid9/perl5
 
 set -x PATH ~/Android/Sdk/platform-tools $PATH
 
+set -x GOPATH ~/go
+
 direnv hook fish | source
 hub alias -s | source
 source /opt/asdf-vm/asdf.fish

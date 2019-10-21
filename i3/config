@@ -230,11 +230,14 @@ bar {
 exec --no-startup-id nm-applet
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id compton
+exec --no-startup-id blueman-applet
+exec --no-startup-id pasystray
 # exec --no-startup-id nitrogen --restore
 
 # volume key
 
-set $output_sink pactl list short sinks | awk '{print $1}'
+# set $output_sink pactl list short sinks | awk '{print $1}'
+set $output_sink pactl list short sinks | tail -n 1 | awk '{print $1}'
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume `$output_sink` +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume `$output_sink` -5% #decrease sound volume
@@ -257,4 +260,5 @@ bindsym XF86MonBrightnessDown exec light -U 3 # decrease screen brightness
 bindsym --release Print exec \
         "scrot ~/Pictures/ss/$(date --iso-8601='seconds').png -m -e 'xclip -selection c -t image/png < $f'"
 
-bindsym --release shift+Print exec "scrot ~/Pictures/ss/$(date --iso-8601='seconds').png -s -e 'xclip -selection c -t image/png < $f'"
+#bindsym --release shift+Print exec "scrot ~/Pictures/ss/$(date --iso-8601='seconds').png -s -e 'xclip -selection c -t image/png < $f'"
+bindsym --release shift+Print exec "maim -s | tee ~/Pictures/ss/$(date --iso-8601='seconds').png | xclip -selection c -t image/png"

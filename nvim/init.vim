@@ -1,0 +1,1 @@
+/home/rid9/.vimrc

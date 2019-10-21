@@ -16,9 +16,11 @@ SETUVAR _fish_abbr_glo:git\x20log\x20\x2d\x2doneline
 SETUVAR _fish_abbr_glog:git\x20log\x20\x2d\x2doneline\x20\x2d\x2dgraph
 SETUVAR _fish_abbr_gsh:git\x20stash
 SETUVAR _fish_abbr_gst:git\x20status
+SETUVAR _fish_abbr_llh:ls\x20\x2dlh
 SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fish_abbr_pev:pipenv
 SETUVAR _fish_abbr_spm:sudo\x20pacman
+SETUVAR _fish_abbr_srn:sudo\x20reboot\x20n
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:5f87ff

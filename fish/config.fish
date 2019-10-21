@@ -20,6 +20,8 @@ abbr -a -U gsh git stash
 abbr -a -U nv nvim
 abbr -a -U ! fuck
 abbr -a -U pev pipenv
+abbr -a -U srn sudo reboot n
+abbr -a -U llh ls -lh
 
 set -g pure_color_git_branch (set_color brblue)
 
@@ -41,6 +43,10 @@ set -x PERL_MB_OPT '--install_base "/home/rid9/perl5"'
 set -x PERL_MM_OPT INSTALL_BASE=/home/rid9/perl5
 
 set -x PATH ~/Android/Sdk/platform-tools $PATH
+set -x PATH ~/.nimble/bin $PATH
+set -x PATH /home/rid9/rakudo/install/bin /home/rid9/rakudo/install/share/perl6/site/bin $PATH
+
+set -x JAVA_HOME /usr/lib/jvm/java-8-openjdk
 
 set -x GOPATH ~/go
 
@@ -48,5 +54,7 @@ direnv hook fish | source
 hub alias -s | source
 source /opt/asdf-vm/asdf.fish
 
-# opam configuration
+# # opam configuration
 source /home/rid9/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+
+set -x MANPATH /usr/share/man $MANPATH

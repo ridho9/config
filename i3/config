@@ -176,6 +176,7 @@ for_window [class="set_float"] floating enable
 for_window [class="Godot"] floating enable
 for_window [title="^Godot Engine*"] floating 
 for_window [instance="line.exe" title="[^(LINE)]"] floating
+for_window [class="Tk" instance="tk" title="tk"] floating enable
 
 for_window [class="^.*"] border pixel 2
 gaps inner 8
@@ -233,6 +234,7 @@ exec --no-startup-id compton
 exec --no-startup-id blueman-applet
 exec --no-startup-id pasystray
 # exec --no-startup-id nitrogen --restore
+exec --no-startup ibus-daemon -drx
 
 # volume key
 

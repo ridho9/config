@@ -7,6 +7,8 @@ end
 # read bashrc for export
 for i in (cat ~/.bashrc | grep "^export" | sed -r 's/export (.*)=/set -x \1 /'); eval $i; end
 
+alias ls='exa'
+
 abbr -a -U spm sudo pacman
 
 abbr -a -U gc git commit
@@ -57,4 +59,11 @@ source /opt/asdf-vm/asdf.fish
 # # opam configuration
 source /home/rid9/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
+source /home/rid9/.config/fish/secret.fish
+
 set -x MANPATH /usr/share/man $MANPATH
+
+# Load rbenv automatically by appending
+# the following to ~/.config/fish/config.fish:
+
+status --is-interactive; and source (rbenv init -|psub)

@@ -51,7 +51,7 @@ block = "toggle"
 text = "Caps"
 command_on = "xdotool key Caps_Lock"
 command_off = "xdotool key Caps_Lock"
-command_state = ''' $CONFIG/scripts/get_caps.sh '''
+command_state = ''' /home/rid9/Project/config/scripts/get_caps.sh '''
 interval = 0.5
 
 [[block]]

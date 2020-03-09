@@ -8,6 +8,8 @@ end
 for i in (cat ~/.bashrc | grep "^export" | sed -r 's/export (.*)=/set -x \1 /'); eval $i; end
 
 alias ls='exa'
+alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
+
 
 abbr -a -U spm sudo pacman
 
@@ -27,8 +29,8 @@ abbr -a -U llh ls -lh
 
 set -g pure_color_git_branch (set_color brblue)
 
-set -x EDITOR code
-set -x BROWSER firefox-developer-edition
+# set -x EDITOR code
+# set -x BROWSER firefox-developer-edition
 set -x N_PREFIX ~/n
 
 set -x CONFIG ~/Project/config
@@ -57,7 +59,7 @@ hub alias -s | source
 source /opt/asdf-vm/asdf.fish
 
 # # opam configuration
-source /home/rid9/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+# source /home/rid9/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
 source /home/rid9/.config/fish/secret.fish
 
@@ -66,4 +68,6 @@ set -x MANPATH /usr/share/man $MANPATH
 # Load rbenv automatically by appending
 # the following to ~/.config/fish/config.fish:
 
-status --is-interactive; and source (rbenv init -|psub)
+# status --is-interactive; and source (rbenv init -|psub)
+
+# starship init fish | source

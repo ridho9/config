@@ -215,6 +215,7 @@ bar {
     position top
     status_command i3status-rs ~/.config/i3/status.toml
     font pango:DejaVu Sans Mono, FontAwesome 10
+    # tray_output primary
 
     colors {
         separator $base03
